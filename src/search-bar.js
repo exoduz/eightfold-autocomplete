@@ -105,8 +105,6 @@ class SearchBar extends Component {
 				suggestionsListComponent = (
 					<ul className="suggestions" ref={ node => this.autocompleteNode = node }>
 						{ filteredSuggestions.map( ( suggestion, index ) => {
-							let className;
-
 							return (
 								<li key={ `${ index }` } onClick={ onClickSuggestion }>
 									{ suggestion }
